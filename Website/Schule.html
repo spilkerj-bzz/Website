@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 50px auto;
+      width: 80%;
+      border-left: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      border-right: 2px solid #ccc;
+    }
+
+    .timeline-box {
+      position: relative;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    .timeline-box-left {
+      background-color: #f2f2f2;
+      margin-left: 0;
+      margin-right: 50.2%;
+      text-align: right;
+    }
+
+    .timeline-box-right {
+      background-color: #5A5A5A;
+      margin-left: 50.2%;
+      margin-right: 0;
+      text-align: left;
+    }
+
+    .timeline-content {
+      margin-inline: auto;
+      color: #000000;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+    }
+
+    .timeline-image {
+      position: absolute;
+      height: 120px;
+      width: 400px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 2px;
+    }
+
+    .timeline-box-left .timeline-image {
+      left: 700px;
+    }
+
+    .timeline-box-right .timeline-image {
+      right: 700px;
+    }
+  </style>
+</head>
+<header>
+  <h1>Schulische Werdegang</h1>
+  <br>
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="Schule.html">Schule</a></li>
+      <li><a href="Hobbys.html">Hobby</a></li>
+      <li><a href="Aufsatz.html">Warum Informatiker</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<div class="timeline">
+  <div class="timeline-box timeline-box-left">
+    <div class="timeline-date">2000</div>
+    <div class="timeline-content">Vorschule- und Kindergartenprogramms in einer Schule in princeton, New Jersey</div>
+    <img src="left_image1.jpg" alt="Kindercare" class="timeline-image">
+  </div>
+  <div class="timeline-box timeline-box-right">
+    <div class="timeline-date">2005</div>
+    <div class="timeline-content">1. bis 3. Klasse in Plainsboro, New Jersey</div>
+    <img src="right_image1.jpg" alt="Right Image" class="timeline-image">
+  </div>
+  <div class="timeline-box timeline-box-left">
+    <div class="timeline-date">2010</div>
+    <div class="timeline-content">4. bis 6. Klasse in der Schulhaus Alte Landstrasse in Kilchberg</div>
+    <img src="left_image2.jpg" alt="Left Image" class="timeline-image">
+  </div>
+  <div class="timeline-box timeline-box-right">
+    <div class="timeline-date">2015</div>
+    <div class="timeline-content">Sekundarschule 1 bis 3 am Campus Moos in Rüschlikon</div>
+    <img src="right_image2.jpeg" alt="Right Image" class="timeline-image">
+  </div>
+  <div class="timeline-box timeline-box-left">
+    <div class="timeline-date">2020</div>
+    <div class="timeline-content">IMS an der Kantonsschule Hottingen</div>
+    <img src="https://img.nzz.ch/2020/10/5/06e58f2e-0342-48a1-8b07-d05a0bf4f331.jpeg?width=560&fit=crop&quality=75&auto=webp" alt="Left Image" class="timeline-image">
+  </div>
+</div>
+</body>
+<footer>
+  <p>Impressum: Max Mustermann, Musterstraße 1, 12345 Musterstadt</p>
+  <p>Disclaimer: Diese Webseite dient nur zu Demonstrationszwecken und enthält keine echten Informationen.</p>
+  <a href="Datenschutzerklärung.html" style="color:white;">Datenschutzerklärung</a>
+</footer>
+</html>
+
